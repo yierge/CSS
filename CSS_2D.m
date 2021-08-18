@@ -1,4 +1,4 @@
-function [P_chern,P_com,C_sig,phi,f,var_c,T_max]=CSS_2D(...
+function [P_chern,P_com,C_sig,phi,f,var_c,cluster_size]=CSS_2D(...
     voxel_p,image_data,mask,rho,p_val)
 %INPUTS
 %voxel_p: voxel-wise p-values in a 1 by V vector
@@ -89,6 +89,7 @@ if isempty(dd)
     phi=1;
     f=1;
     var_c=1;
+    cluster_size=1;
 end
 
 
